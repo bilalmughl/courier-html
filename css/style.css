@@ -1311,12 +1311,12 @@ body {
     margin: 0 auto;
     max-width: 625px;
   }
-  .login-form-area .form-control {
+  /* .login-form-area .form-control {
     height: 60px;
     background: #ffffff;
     border: 1px solid #e1e1e1;
     border-radius: 66px;
-  }
+  } */
   .login-form-area .input-field {
     margin-bottom: 40px;
   }
@@ -1559,6 +1559,7 @@ body {
 .step-form-area .form-control{
   border-radius: 5px;
 }
+.login-form-area .form-control,
 .step-form-area .form-control{
   background: #FFFFFF;
   border: 1px solid #E1E1E1;
@@ -1571,6 +1572,7 @@ body {
   height: 60px;
   padding: 15px 22px;
 }
+.login-form-area .btn,
 .step-form-area .btn{
   font-family: 'Poppins';
   font-style: normal;
@@ -1581,6 +1583,9 @@ body {
   padding: 10px 30px 8px;
   flex-grow: 1;
   width: 50%;
+}
+.login-form-area .btn{
+  width: 100%;
 }
 .nextprevious{
   gap:30px;
@@ -1719,9 +1724,9 @@ body {
 .modal-content .step-form-area{
   margin: 0;
 }
-.modal-content .step-form-area{
+/* .modal-content .step-form-area{
   padding: 0;
-}
+} */
 .contact-section-updated .btn{
   width: 100%;
 }

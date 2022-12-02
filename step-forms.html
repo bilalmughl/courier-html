@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Login - Corior</title>
+	<!-- MDB icon -->
+	<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<!-- Google Fonts Roboto -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- MDB -->
+	<link rel="stylesheet" href="css/mdb.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css"> 
+</head>
+
+<body>
+	<header class="corior-header">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-auto d-flex">
+					<div class="mobile-toggle d-lg-none d-md-block">
+						<button class="navbar-toggler btn " type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
+								<rect width="24" height="2" rx="1" fill="white" />
+								<rect y="6" width="19" height="2" rx="1" fill="white" />
+								<rect y="12" width="14" height="2" rx="1" fill="white" /> </svg>
+						</button>
+					</div>
+					<div class="logo">
+						<a href="/"><img src="img/logo.png" alt="Logo"></a>
+					</div>
+				</div>
+				<div class="col-auto">
+					<!-- Navbar -->
+					<nav class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="navbarExample01">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item active"> <a class="nav-link" href="who-we.html">who we are</a> </li>
+									<li class="nav-item"> <a class="nav-link" href="rate-services.html">rates & services</a> </li>
+									<li class="nav-item"> <a class="nav-link" href="faq.html">faq</a> </li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<!-- Navbar -->
+				</div>
+				<div class="col-auto order-sm-2">
+					<div class="btn-group login-area"> <a href="" class="btn btn-outline-light" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">Login</a> <a href="signup.html" class="btn btn-warning">Signup</a> </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main-wrapper">
+		<div class="container mt-5">
+			
+			<button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+				Launch demo modal
+			  </button>
+					
+		</div>
+	</main>
+	<footer class="corior-footer">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-auto">
+					<div class="footer-nav d-flex align-items-center">
+						<div class="footer-logo"> <img src="img/footer-logo.svg" alt="logo"> </div>
+						<ul class="d-lg-flex">
+							<li class="nav-item active"> <a class="nav-link" href="signup.html">who we are</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="privacy.html">Privacy Policy</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="terms.html">Terms Of Use</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="corior-copyright">
+						<p><span class="th-color2">1Courier,</span> All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form id="regForm" class="step-form-area">
+					<div class="all-steps" id="all-steps"> 
+						<span class="step"></span> 
+						<span class="step"></span> 
+						<span class="step"></span> 
+						<span class="step"></span> 
+					</div>
+					<div class="tab instant-quote">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>Instant Quote</h6>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<!-- Email input -->
+								<div class="input-field">
+									<label class="input-label">Pick up address</label>
+									<input type="email" class="form-control"  placeholder="Add Address"/> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<!-- Password input -->
+								<div class="input-field">
+									<label class="input-label">Ship to address</label>
+									<input type="password" class="form-control"  placeholder="Add Address"/> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab pickup-info-box">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>Pick Up info</h6>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Company Name</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Address</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Province</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">City</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Postal Code</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Name</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont No</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Location Details</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Email</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>shipping info</h6>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Company Name</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Address</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Province</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">City</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Postal Code</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Name</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont No</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Location Details</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Email</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>Other info</h6>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">total weight </label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">total quantity </label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">vehicle type</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Location Details</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-field input-radio-field">
+									<div class="btn-group">
+										<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+										<label class="btn btn-secondary" for="option1"><img src="img/car-1.jpg"><span>car</span></label>
+									  
+										<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
+										<label class="btn btn-secondary" for="option2"><img src="img/car-1.jpg"><span>mini van</span></label>
+									  
+										<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" />
+										<label class="btn btn-secondary" for="option3"><img src="img/car-1.jpg"><span>cargo van</span></label>
+
+										<input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" />
+										<label class="btn btn-secondary" for="option4"><img src="img/car-1.jpg"><span>mini truck</span></label>
+									  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="thanks-message text-center" id="text-message"> 
+						<div class="step-form-area thankyou-popup max-w730">
+							<h5>Thank You!</h5>
+							<p>For registering with us, We hope you like and enjoy our services.</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center justify-content-center nextprevious" id="nextprevious">
+						
+						<button class="btn btn-primary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> 
+						<button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> 
+						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- MDB -->
+	<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="login-form-area">
+					<form>
+						<div class="text-center logo-login">
+							<p>
+								<a href="#"><img src="img/login-logo.png" alt="Login Logo"></a>
+							</p>
+						</div>
+						<!-- Email input -->
+						<div class="input-field">
+							<label class="input-label">Email</label>
+							<input type="email" class="form-control" /> 
+						</div>
+						<!-- Password input -->
+						<div class="input-field">
+							<label class="form-label">Password</label>
+							<input type="password" class="form-control" /> 
+						</div>
+						<!-- 2 column grid layout for inline styling -->
+						<div class="row mb-4">
+							<div class="col text-center forgot-pas">
+								<!-- Simple link -->
+								<p><a href="#!">Forgot your password?</a></p>
+							</div>
+						</div>
+						<!-- Submit button -->
+						<button type="button" class="btn btn-primary btn-block mb-4">Login</button>
+						<!-- Register buttons -->
+						<div class="text-center signup-link">
+							<p><a href="#">Don’t have an account? Sign up</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/mdb.min.js"></script>
+	<script>
+		//your javascript goes here
+var currentTab = 0;
+document.addEventListener("DOMContentLoaded", function(event) {
+
+
+    showTab(currentTab);
+
+});
+
+function showTab(n) {
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+    } else {
+        document.getElementById("prevBtn").style.display = "block";
+    }
+    if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Submit";
+    } else {
+        document.getElementById("nextBtn").innerHTML = "Next";
+    }
+    fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+    var x = document.getElementsByClassName("tab");
+    if (n == 1 && !validateForm()) return false;
+    x[currentTab].style.display = "none";
+    currentTab = currentTab + n;
+    if (currentTab >= x.length) {
+        // document.getElementById("regForm").submit();
+        // return false;
+        // alert("sdf");
+        document.getElementById("nextprevious").style.display = "none";
+        document.getElementById("all-steps").style.display = "none";
+        document.getElementById("register").style.display = "none";
+        document.getElementById("text-message").style.display = "block";
+
+
+
+
+    }
+    showTab(currentTab);
+}
+
+function validateForm() {
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    for (i = 0; i < y.length; i++) {
+        if (y[i].value == "") {
+            y[i].className += " invalid";
+            valid = false;
+        }
+    }
+    if (valid) { document.getElementsByClassName("step")[currentTab].className += " finish"; }
+    return valid;
+}
+
+function fixStepIndicator(n) {
+    var i, x = document.getElementsByClassName("step");
+    for (i = 0; i < x.length; i++) { x[i].className = x[i].className.replace(" active", ""); }
+    x[n].className += " active";
+}
+	</script>
+</body>
+
+</html>

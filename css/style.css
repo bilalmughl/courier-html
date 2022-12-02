@@ -1711,3 +1711,17 @@ body {
 .contact-section-updated .input-submit .btn{
   max-height: 60px;
 }
+
+.modal-content .contact-section-updated{
+  padding: 30px;
+  background-color: #fff;
+}
+.modal-content .step-form-area{
+  margin: 0;
+}
+.modal-content .step-form-area{
+  padding: 0;
+}
+.contact-section-updated .btn{
+  width: 100%;
+}

@@ -59,7 +59,7 @@
 				</div>
 				<div class="col-auto order-sm-2">
 					<div class="btn-group login-area">
-						<a href="" class="btn btn-outline-light">Login</a>
+						<a href="" class="btn btn-outline-light" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">Login</a>
 						<a href="signup.html" class="btn btn-warning">Signup</a>
 					</div>
 				</div>
@@ -79,7 +79,9 @@
 					<h1 class="title">Smart Shipping For Smart Business</h1>
 					<p class="banner-caption">Easy. Precise. Affordable. Specializing in same Day and Next Day Services.</p>
 					<div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-						<button type="button" class="btn btn-outline-light th-bg">Instant Quote</button>
+						<button type="button" class="btn btn-outline-light th-bg" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+							Instant Quote
+						</button>
 						<button type="button" class="btn btn-warning">Track order</button>
 					</div>
 				</div>
@@ -396,100 +398,9 @@
 						</div>
 					</div>
 					<div class="col-lg-auto col-sm-12 ms-lg-auto smooth-btn">
-						<a href="#lets-talk" class="btn btn-warning btn-block">Talk to expert</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="lets-talk" class="section contact-section-updated">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6">
-						<div class="about-caption">
-							<h5 class="title">When the Talk to Sales Expert button is pressed direct them to a similar form like this that goes to <span class="th-color">
-								sales@1courier.com
-							</span>
-							</h5>
-							<h6>Features:</h6>
-							<ul class="list-group list-group-light">
-								<li class="list-group-item">An item</li>
-								<li class="list-group-item">A second item</li>
-								<li class="list-group-item">A third item</li>
-								<li class="list-group-item">A fourth item</li>
-								<li class="list-group-item">And a fifth one</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="step-form-area">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="input-field">
-										<label class="input-label">First Name</label>
-										<input
-										type="text"
-										class="form-control" placeholder="Business">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="input-field">
-										<label class="input-label">Last Name</label>
-										<input
-										type="text"
-										class="form-control" placeholder="Greater Toronto Area">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="input-field">
-										<label class="input-label">Business Email</label>
-										<input
-										type="email"
-										class="form-control" placeholder="Business Name">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="input-field">
-										<label class="input-label">Phone Number</label>
-										<input
-										type="tel"
-										class="form-control" placeholder="+923364610885">
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="input-field">
-										<label class="input-label">Cities you want to deliver in?</label>
-										<!-- Default radio -->
-										<div class="form-check mb-2">
-											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-											<label class="form-check-label" for="flexRadioDefault1">Toronto </label>
-										</div>
-
-										<!-- Default checked radio -->
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-											<label class="form-check-label" for="flexRadioDefault2"> Toronto </label>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="input-field">
-										<label class="input-label">Monthly Estimated Volume</label>
-										<select class="form-control select-input">
-											<option>Less than 100</option>
-											<option>101 to 250</option>
-											<option>251 to 500</option>
-											<option>500 to 1000</option>
-											<option>1000+ </option>
-										</select>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="input-submit">
-										<button type="submit" class="btn btn-primary btn-block">Let's Talk</button>
-									</div>
-								</div>
-							</div>
-						</div>
+						<button type="button" class="btn btn-warning" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+							Talk to expert
+						</button>
 					</div>
 				</div>
 			</div>
@@ -578,9 +489,439 @@
 		</div>
 	</footer>
     <!-- MDB -->
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form id="regForm" class="step-form-area">
+					<div class="all-steps" id="all-steps"> 
+						<span class="step"></span> 
+						<span class="step"></span> 
+						<span class="step"></span> 
+						<span class="step"></span> 
+					</div>
+					<div class="tab instant-quote">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>Instant Quote</h6>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<!-- Email input -->
+								<div class="input-field">
+									<label class="input-label">Pick up address</label>
+									<input type="email" class="form-control"  placeholder="Add Address"/> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<!-- Password input -->
+								<div class="input-field">
+									<label class="input-label">Ship to address</label>
+									<input type="password" class="form-control"  placeholder="Add Address"/> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab pickup-info-box">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>Pick Up info</h6>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Company Name</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Address</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Province</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">City</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Postal Code</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Name</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont No</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Location Details</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Email</label>
+									<input type="text" class="form-control"  /> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>shipping info</h6>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Company Name</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Address</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Province</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">City</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Postal Code</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Name</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont No</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Location Details</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-field">
+									<label class="input-label">Pickup Cont Email</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="text-center step-form-title">
+									<h6>Other info</h6>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">total weight </label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">total quantity </label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">vehicle type</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-field">
+									<label class="input-label">Location Details</label>
+									<input type="text" class="form-control" /> 
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-field input-radio-field">
+									<div class="btn-group">
+										<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+										<label class="btn btn-secondary" for="option1"><img src="img/car-1.jpg"><span>car</span></label>
+									  
+										<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
+										<label class="btn btn-secondary" for="option2"><img src="img/car-1.jpg"><span>mini van</span></label>
+									  
+										<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" />
+										<label class="btn btn-secondary" for="option3"><img src="img/car-1.jpg"><span>cargo van</span></label>
+
+										<input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" />
+										<label class="btn btn-secondary" for="option4"><img src="img/car-1.jpg"><span>mini truck</span></label>
+									  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="thanks-message text-center" id="text-message"> 
+						<div class="step-form-area thankyou-popup max-w730">
+							<h5>Thank You!</h5>
+							<p>For registering with us, We hope you like and enjoy our services.</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center justify-content-center nextprevious" id="nextprevious">
+						
+						<button class="btn btn-primary" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> 
+						<button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> 
+						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div id="lets-talk" class="section contact-section-updated">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="about-caption">
+									<h5 class="title">When the Talk to Sales Expert button is pressed direct them to a similar form like this that goes to <span class="th-color">
+										sales@1courier.com
+									</span>
+									</h5>
+									<h6>Features:</h6>
+									<ul class="list-group list-group-light">
+										<li class="list-group-item">An item</li>
+										<li class="list-group-item">A second item</li>
+										<li class="list-group-item">A third item</li>
+										<li class="list-group-item">A fourth item</li>
+										<li class="list-group-item">And a fifth one</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="step-form-area">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="input-field">
+												<label class="input-label">First Name</label>
+												<input
+												type="text"
+												class="form-control" placeholder="Business">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="input-field">
+												<label class="input-label">Last Name</label>
+												<input
+												type="text"
+												class="form-control" placeholder="Greater Toronto Area">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="input-field">
+												<label class="input-label">Business Email</label>
+												<input
+												type="email"
+												class="form-control" placeholder="Business Name">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="input-field">
+												<label class="input-label">Phone Number</label>
+												<input
+												type="tel"
+												class="form-control" placeholder="+923364610885">
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="input-field">
+												<label class="input-label">Cities you want to deliver in?</label>
+												<!-- Default radio -->
+												<div class="form-check mb-2">
+													<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+													<label class="form-check-label" for="flexRadioDefault1">Toronto </label>
+												</div>
+		
+												<!-- Default checked radio -->
+												<div class="form-check">
+													<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+													<label class="form-check-label" for="flexRadioDefault2"> Toronto </label>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="input-field">
+												<label class="input-label">Monthly Estimated Volume</label>
+												<select class="form-control select-input">
+													<option>Less than 100</option>
+													<option>101 to 250</option>
+													<option>251 to 500</option>
+													<option>500 to 1000</option>
+													<option>1000+ </option>
+												</select>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="input-submit">
+												<button type="submit" class="btn btn-primary btn-block">Let's Talk</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="login-form-area">
+					<form>
+						<div class="text-center logo-login">
+							<p>
+								<a href="#"><img src="img/login-logo.png" alt="Login Logo"></a>
+							</p>
+						</div>
+						<!-- Email input -->
+						<div class="input-field">
+							<label class="input-label">Email</label>
+							<input type="email" class="form-control" /> 
+						</div>
+						<!-- Password input -->
+						<div class="input-field">
+							<label class="form-label">Password</label>
+							<input type="password" class="form-control" /> 
+						</div>
+						<!-- 2 column grid layout for inline styling -->
+						<div class="row mb-4">
+							<div class="col text-center forgot-pas">
+								<!-- Simple link -->
+								<p><a href="#!">Forgot your password?</a></p>
+							</div>
+						</div>
+						<!-- Submit button -->
+						<button type="button" class="btn btn-primary btn-block mb-4">Login</button>
+						<!-- Register buttons -->
+						<div class="text-center signup-link">
+							<p><a href="#">Don’t have an account? Sign up</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
     <script src="js/jquery.js"></script>
     <script src="js/mdb.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		//your javascript goes here
+		var currentTab = 0;
+		document.addEventListener("DOMContentLoaded", function(event) {
+
+
+			showTab(currentTab);
+
+		});
+
+		function showTab(n) {
+			var x = document.getElementsByClassName("tab");
+			x[n].style.display = "block";
+			if (n == 0) {
+				document.getElementById("prevBtn").style.display = "none";
+			} else {
+				document.getElementById("prevBtn").style.display = "block";
+			}
+			if (n == (x.length - 1)) {
+				document.getElementById("nextBtn").innerHTML = "Submit";
+			} else {
+				document.getElementById("nextBtn").innerHTML = "Next";
+			}
+			fixStepIndicator(n)
+		}
+
+		function nextPrev(n) {
+			var x = document.getElementsByClassName("tab");
+			if (n == 1 && !validateForm()) return false;
+			x[currentTab].style.display = "none";
+			currentTab = currentTab + n;
+			if (currentTab >= x.length) {
+				// document.getElementById("regForm").submit();
+				// return false;
+				// alert("sdf");
+				document.getElementById("nextprevious").style.display = "none";
+				document.getElementById("all-steps").style.display = "none";
+				document.getElementById("register").style.display = "none";
+				document.getElementById("text-message").style.display = "block";
+
+
+
+
+			}
+			showTab(currentTab);
+		}
+
+		function validateForm() {
+			var x, y, i, valid = true;
+			x = document.getElementsByClassName("tab");
+			y = x[currentTab].getElementsByTagName("input");
+			for (i = 0; i < y.length; i++) {
+				if (y[i].value == "") {
+					y[i].className += " invalid";
+					valid = false;
+				}
+			}
+			if (valid) { document.getElementsByClassName("step")[currentTab].className += " finish"; }
+			return valid;
+		}
+
+		function fixStepIndicator(n) {
+			var i, x = document.getElementsByClassName("step");
+			for (i = 0; i < x.length; i++) { x[i].className = x[i].className.replace(" active", ""); }
+			x[n].className += " active";
+		}
+			</script>
   </body>
 </html>

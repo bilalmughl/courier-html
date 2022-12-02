@@ -52,7 +52,7 @@
 					<!-- Navbar -->
 				</div>
 				<div class="col-auto order-sm-2">
-					<div class="btn-group login-area"> <a href="" class="btn btn-outline-light">Login</a> <a href="signup.html" class="btn btn-warning">Signup</a> </div>
+					<div class="btn-group login-area"> <a href="" class="btn btn-outline-light" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">Login</a> <a href="signup.html" class="btn btn-warning">Signup</a> </div>
 				</div>
 			</div>
 		</div>
@@ -404,6 +404,44 @@
 		</div>
 	</footer>
 	<!-- MDB -->
+	<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="login-form-area">
+					<form>
+						<div class="text-center logo-login">
+							<p>
+								<a href="#"><img src="img/login-logo.png" alt="Login Logo"></a>
+							</p>
+						</div>
+						<!-- Email input -->
+						<div class="input-field">
+							<label class="input-label">Email</label>
+							<input type="email" class="form-control" /> 
+						</div>
+						<!-- Password input -->
+						<div class="input-field">
+							<label class="form-label">Password</label>
+							<input type="password" class="form-control" /> 
+						</div>
+						<!-- 2 column grid layout for inline styling -->
+						<div class="row mb-4">
+							<div class="col text-center forgot-pas">
+								<!-- Simple link -->
+								<p><a href="#!">Forgot your password?</a></p>
+							</div>
+						</div>
+						<!-- Submit button -->
+						<button type="button" class="btn btn-primary btn-block mb-4">Login</button>
+						<!-- Register buttons -->
+						<div class="text-center signup-link">
+							<p><a href="#">Don’t have an account? Sign up</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/mdb.min.js"></script>
 </body>
 

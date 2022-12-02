@@ -39,7 +39,16 @@
         max-width: 1185px;
     }
 }
-
+@media (min-width:635px){
+    .login-form-area{
+        width: 625px;
+    }
+}
+@media (min-width:576px){
+    .login-form-area{
+        width: 490px;
+    }
+}
 @media (min-width:1400px) and (max-width:1730px) {
     .top-img{
         right: -10vw;
@@ -426,7 +435,11 @@
         padding-top: 100px;
     }
 }
-@media (max-width:655px) {.login-form-area{margin: 0 15px;}
+@media (max-width:655px) {.login-form-area{margin: 0 15px; }
+.login-form-area {
+    padding: 30px;
+    width: calc(100vw - 50px);
+}
 .step-form-area{
     padding: 30px;
 }
@@ -445,6 +458,16 @@
   }
 }
 @media (max-width:767px) {
+    .testimonial-slider .slick-slide{
+        margin-bottom: 0;
+    }
+    .modal-content .contact-section-updated{
+        padding: 10px;
+    }
+    .brand-section,
+    .new-call-to-action-section{
+        padding: 50px 0;
+    }
     .testimonial-thumb{
         position: absolute;
         max-width: 90px;
